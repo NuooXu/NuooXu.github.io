@@ -7,14 +7,14 @@ author:     Nuo Xu 						# 作者
 header-img:              	#这篇文章标题背景图片
 catalog: true 						# 是否归档
 tags:								#标签
-    - CS61b
-    
+    - CS61b 
 ---
 # 学习内容
 HW 0: A Java Crash Course
 
 ## 练习1
-1.打印指定行数的三角形
+1.打印指定行数的三角形  
+
 2.找到一列数组中的最大值
 
 ### 代码
