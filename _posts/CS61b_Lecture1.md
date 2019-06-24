@@ -2,7 +2,7 @@
 layout:     post   				    # 使用的布局（不需要改）
 title:      CS61b Lecture 1			# 标题 
 subtitle:   Java基本语法回顾练习       #副标题
-date:       2019-6.23			# 时间
+date:       2019-6-23			# 时间
 author:     Nuo Xu 						# 作者
 header-img:              	#这篇文章标题背景图片
 catalog: true 						# 是否归档
