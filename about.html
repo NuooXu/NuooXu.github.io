@@ -13,27 +13,45 @@ header-img: "img/post-bg-rwd.jpg"
 
 <!-- Chinese Version -->
 <div class="zh post-container">
+  <!--copied from markdown -->
+  <blockquote>
+    <p>
+      冰冻三尺 非一日之寒<br />
+      积土成山 非斯须之作
+    </p>
+  </blockquote>
 
-    <!--copied from markdown -->
-    <blockquote><p>冰冻三尺 非一日之寒<br>
-    积土成山 非斯须之作</p></blockquote>
+  <p>
+    Hey，I am<strong>Nuo Xu</strong>, a graduate student at Northeastern
+    University, major in Software Engineering.
+  </p>
 
-    <p>Hey，我是<strong>许诺</strong>，美国东北大学，CSE专业学生。</p>
+  <p>
+    I am a problem solver and always have a curiosity for new technologies. I
+    believe technology can change our lifestyle greatly. And I like making new
+    friends, talking with different people makes me know the world better. So if
+    you share the same interests, don’t hesitate to reach out to me!
+  </p>
 
-    <p>还喜欢看电影与旅行。</p>
+  <p>
+    Build this blog by using
+    <a href="https://pages.github.com/">GitHub Pages</a> and
+    <a href="http://jekyll.com.cn/">Jekyll</a> resource. This is my
+    <a href="https://github.com/NuooXu">👉GitHub·NuoXu</a> .
+  </p>
 
-    <p>这是我的利用 <a href="https://pages.github.com/">GitHub Pages</a> 与 <a href="http://jekyll.com.cn/">Jekyll</a> 搭建的 个人博客。我在GitHub主页<a href="https://github.com/NuooXu">👉GitHub·NuoXu</a> 。如果有什么问题，欢迎提出探讨~</p>
+  <p></p>
 
-    <p></p>
-    
-    <h5>Talks</h5>
+  <h5>Talks</h5>
 
-    <ul>
-        <li><a href="https://github.com">GitHub</a></li>
-        <li><a href="http://jekyll.com.cn/">jekyll</a></li>
-        <li><a href="http://huangxuan.me/">Hux</a></li> 
-        <li><a href="https://analytics.google.com/analytics">Google Analytics</a></li>
-    </ul>
+  <ul>
+    <li><a href="https://github.com">GitHub</a></li>
+    <li><a href="http://jekyll.com.cn/">jekyll</a></li>
+    <li><a href="http://huangxuan.me/">Hux</a></li>
+    <li>
+      <a href="https://analytics.google.com/analytics">Google Analytics</a>
+    </li>
+  </ul>
 </div>
 
 <!-- English Version -->
@@ -59,44 +77,43 @@ header-img: "img/post-bg-rwd.jpg"
 
 <!-- Handle Language Change -->
 <script type="text/javascript">
-    // get nodes
-    var $zh = document.querySelector(".zh");
-    var $en = document.querySelector(".en");
-    var $select = document.querySelector("select");
+  // get nodes
+  var $zh = document.querySelector(".zh")
+  var $en = document.querySelector(".en")
+  var $select = document.querySelector("select")
 
-    // bind hashchange event
-    window.addEventListener('hashchange', _render);
+  // bind hashchange event
+  window.addEventListener("hashchange", _render)
 
-    // handle render
-    function _render(){
-        var _hash = window.location.hash;
-        // en
-        if(_hash == "#en"){
-            $select.selectedIndex = 1;
-            $en.style.display = "block";
-            $zh.style.display = "none";
-        // zh by default
-        }else{
-            // not trigger onChange, otherwise cause a loop call.
-            $select.selectedIndex = 0;
-            $zh.style.display = "block";
-            $en.style.display = "none";
-        }
+  // handle render
+  function _render() {
+    var _hash = window.location.hash
+    // en
+    if (_hash == "#en") {
+      $select.selectedIndex = 1
+      $en.style.display = "block"
+      $zh.style.display = "none"
+      // zh by default
+    } else {
+      // not trigger onChange, otherwise cause a loop call.
+      $select.selectedIndex = 0
+      $zh.style.display = "block"
+      $en.style.display = "none"
     }
+  }
 
-    // handle select change
-    function onLanChange(index){
-        if(index == 0){
-            window.location.hash = "#zh"
-        }else{
-            window.location.hash = "#en"
-        }
+  // handle select change
+  function onLanChange(index) {
+    if (index == 0) {
+      window.location.hash = "#zh"
+    } else {
+      window.location.hash = "#en"
     }
+  }
 
-    // init
-    _render();
+  // init
+  _render()
 </script>
-
 
 <!-- Gitalk 评论 start  -->
 {% if site.gitalk.enable %}
@@ -122,7 +139,7 @@ header-img: "img/post-bg-rwd.jpg"
 -->
 <!-- Gitalk end -->
 
- <!-- disqus 评论框 start  -->
+<!-- disqus 评论框 start  -->
 <!--{% if site.disqus.enable %}
 
 <div class="comment">
@@ -147,5 +164,4 @@ header-img: "img/post-bg-rwd.jpg"
 </script>
 -->
 <!-- disqus 公共JS代码 end -->
-{% endif %}
--->
+{% endif %} -->
